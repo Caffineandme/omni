@@ -10,6 +10,8 @@
 		/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
 		<style>
 			/* Remove the navbar's default rounded borders and increase the bottom margin */
 			.navbar {
@@ -54,14 +56,13 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="../../index.html">Home</a></li>
-						<li><a href="pages/press/pressindex.html">Press Machines</a></li>
-						<li><a href="pages/flash/flashindex.html">Flash Units</a></li>
-						<li><a href="pages/dryers/dryerindex.html">Dryers</a></li>
+						<li class="active"><a href="../index.html">Home</a></li>
+						<li><a href="../pages/press/pressindex.html">Press Machines</a></li>
+						<li><a href="../pages/flash/flashindex.html">Flash Units</a></li>
+						<li><a href="../pages/dryers/dryerindex.html">Dryers</a></li>
 						<li>
 							<a href="pages/embroidery/embroideryindex.html"
-								>Embroidery Machines</a
-							>
+								>Embroidery Machines</a>
 						</li>
 						<li><a href="pages/sewing/sewingindex.html">Sewing Machines</a></li>
 						<li>
@@ -87,5 +88,37 @@
 				</div>
 			</div>
 		</nav>
+
+<!-- User input connect to main.js -->
+
+
+
+
+		<br>
+		
+		
+			<label for="name">Name</label>
+			<br>
+			<textarea class="form-control" id="name" rows="1"></textarea>
+		</div>
+		
+			<br>
+			<label for="issue">Maintenance issue</label>
+			<br>
+			<textarea class="form-control" id="issue" rows="6"></textarea>
+		</div>
+		<br></br>
+		
+			<label for="location">Location</label>
+			<br>
+			<textarea class="form-control" id="location" rows="1"></textarea>
+		</div>
+		<br></br>
+		<button id="send">Send</button>
+		<script src="../main.js"></script>
+
+
+
+
 	</body>
 </html>
